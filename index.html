@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Baboucarr Sabou Ya Guest Hotel - 6 Rooms</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">BABOUCARR SABOU YA GUEST HOTEL</div>
+    <nav>
+      <a href="#rooms">Rooms</a>
+      <a href="#restaurant">Restaurant</a>
+      <a href="#book">Book</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Welcome to Hawa's Hotel</h1>
+    <p>Clean, affordable, secure - in the heart of Baboucarr Sabou Ya</p>
+    <button type="button" id="bookNow">Book Now on WhatsApp</button>
+  </section>
+
+  <section id="rooms" class="section">
+    <h2>Our 6 Guest Rooms</h2>
+    <div class="room-grid">
+      <div class="room-card"><h3>Room 1</h3><p>Double Bed + Private Toilet</p><span>D1,600 / night</span><button type="button" class="book-room" data-room="Room 1 - D1,600 / night">Book this room</button></div>
+      <div class="room-card"><h3>Room 2</h3><p>Double Bed + Private Toilet</p><span>D1,700 / night</span><button type="button" class="book-room" data-room="Room 2 - D1,700 / night">Book this room</button></div>
+      <div class="room-card"><h3>Room 3</h3><p>Double Bed + Private Toilet</p><span>D1,800 / night</span><button type="button" class="book-room" data-room="Room 3 - D1,800 / night">Book this room</button></div>
+      <div class="room-card"><h3>Room 4</h3><p>Double Bed + Private Toilet</p><span>D2,500 / night</span><button type="button" class="book-room" data-room="Room 4 - D2,500 / night">Book this room</button></div>
+      <div class="room-card"><h3>Room 5</h3><p>Double Bed + Private Toilet</p><span>D3,000 / night - VIP</span><button type="button" class="book-room" data-room="Room 5 - D3,000 / night - VIP">Book this room</button></div>
+      <div class="room-card"><h3>Room 6</h3><p>Double Bed + Private Toilet</p><span>D4,000 / night - VIP</span><button type="button" class="book-room" data-room="Room 6 - D4,000 / night - VIP">Book this room</button></div>
+    </div>
+  </section>
+
+  <section id="restaurant" class="section gray">
+    <h2>Reception & Restaurant</h2>
+    <p>Reception open 24 hours | Restaurant serving breakfast, lunch, dinner | Parking for 4 cars | Generator + Water Tank</p>
+  </section>
+
+  <section id="book" class="section">
+    <h2>Book a Room</h2>
+    <form id="bookingForm" class="booking-form">
+      <label for="name">Name
+        <input id="name" name="name" type="text" required>
+      </label>
+      <label for="phone">Phone
+        <input id="phone" name="phone" type="tel" required>
+      </label>
+      <label for="room">Room
+        <select id="room" name="room" required>
+          <option value="">Choose a room</option>
+          <option value="Room 1 - D1,600 / night">Room 1 - D1,600 / night</option>
+          <option value="Room 2 - D1,700 / night">Room 2 - D1,700 / night</option>
+          <option value="Room 3 - D1,800 / night">Room 3 - D1,800 / night</option>
+          <option value="Room 4 - D2,500 / night">Room 4 - D2,500 / night</option>
+          <option value="Room 5 - D3,000 / night - VIP">Room 5 - D3,000 / night - VIP</option>
+          <option value="Room 6 - D4,000 / night - VIP">Room 6 - D4,000 / night - VIP</option>
+        </select>
+      </label>
+      <div class="dates">
+        <label for="checkin">Check in
+          <input id="checkin" name="checkin" type="date" required>
+        </label>
+        <label for="checkout">Check out
+          <input id="checkout" name="checkout" type="date" required>
+        </label>
+      </div>
+      <label for="message">Request
+        <textarea id="message" name="message" rows="3"></textarea>
+      </label>
+      <button type="submit">Send booking on WhatsApp</button>
+    </form>
+  </section>
+
+  <footer id="contact">
+    <p>Location: Baboucarr Sabou Ya,
+       The Gambia | Owner: Hawa Boye | 
+       WhatsApp: +220 877673348</p>
+    <p>Built by Hawa Boye - 2026</p>
+  </footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
